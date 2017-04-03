@@ -6,8 +6,6 @@ node.js의 모듈중에 app이 죽은 경우 자동으로 다시 시작해주는
 
 해당 모듈을 사용하면, node.js의 app을 항상 keep alive로 \(살아있는 상태로\) 유지 할 수 있다.
 
-
-
 ###### 설치
 
 ```bash
@@ -18,15 +16,11 @@ $ npm install -g forever
 $ sudo npm install -g forever
 ```
 
-
-
 ###### 기본 사용
 
 ```bash
 $ forever start app.js
 ```
-
-
 
 ###### 명령어를 추가한 사용
 
@@ -41,8 +35,6 @@ $ forever start -c 'node --debug' app.js
 
 $ forever start -c 'node --inspect' app.js
 ```
-
-
 
 -c 는 COMMAND 옵션을 의미한다. 사실 기본적값으로 'node'로 실행되고 있다. 즉
 
